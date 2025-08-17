@@ -1,5 +1,5 @@
+import { KeyboardLayout, keyboardLayouts } from "@/util/constants";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { keyboardLayouts, KeyboardLayout } from "@/util/constants";
 
 export const KeyboardSignature = () => {
   const [name, setName] = useState("");
@@ -252,6 +252,15 @@ export const KeyboardSignature = () => {
           >
             Export PNG
           </button>
+
+          <a
+            href="https://github.com/AnirudhMemani/keyboard-signature-paths"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="font-medium text-neutral-500 border border-neutral-700/50 px-3.5 py-1.5 bg-neutral-900/50 text-sm rounded-md text-center active:scale-98 active:brightness-70 hover:brightness-85 transition-all duration-100 ease-out"
+          >
+            View on GitHub
+          </a>
         </div>
       </div>
     </div>
