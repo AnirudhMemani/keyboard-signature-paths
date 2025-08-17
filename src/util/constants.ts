@@ -40,6 +40,18 @@ export const keyboardLayouts: Record<KeyboardLayout, Record<string, Key>> = {
     B: { x: 5.25, y: 2 },
     N: { x: 6.25, y: 2 },
     M: { x: 7.25, y: 2 },
+
+    // Number pad
+    "7": { x: 11.5, y: 0 },
+    "8": { x: 12.5, y: 0 },
+    "9": { x: 13.5, y: 0 },
+    "4": { x: 11.5, y: 1 },
+    "5": { x: 12.5, y: 1 },
+    "6": { x: 13.5, y: 1 },
+    "1": { x: 11.5, y: 2 },
+    "2": { x: 12.5, y: 2 },
+    "3": { x: 13.5, y: 2 },
+    "0": { x: 12.5, y: 3 },
   },
 
   [KeyboardLayout.COLEMAK]: {
@@ -71,6 +83,18 @@ export const keyboardLayouts: Record<KeyboardLayout, Record<string, Key>> = {
     B: { x: 5.25, y: 2 },
     K: { x: 6.25, y: 2 },
     M: { x: 7.25, y: 2 },
+
+    // Number pad
+    "7": { x: 11.5, y: 0 },
+    "8": { x: 12.5, y: 0 },
+    "9": { x: 13.5, y: 0 },
+    "4": { x: 11.5, y: 1 },
+    "5": { x: 12.5, y: 1 },
+    "6": { x: 13.5, y: 1 },
+    "1": { x: 11.5, y: 2 },
+    "2": { x: 12.5, y: 2 },
+    "3": { x: 13.5, y: 2 },
+    "0": { x: 12.5, y: 3 },
   },
 
   [KeyboardLayout.DVORAK]: {
@@ -106,6 +130,18 @@ export const keyboardLayouts: Record<KeyboardLayout, Record<string, Key>> = {
     W: { x: 8.25, y: 2 },
     V: { x: 9.25, y: 2 },
     Z: { x: 10.25, y: 2 },
+
+    // Number pad
+    "7": { x: 12, y: 0 },
+    "8": { x: 13, y: 0 },
+    "9": { x: 14, y: 0 },
+    "4": { x: 12, y: 1 },
+    "5": { x: 13, y: 1 },
+    "6": { x: 14, y: 1 },
+    "1": { x: 12, y: 2 },
+    "2": { x: 13, y: 2 },
+    "3": { x: 14, y: 2 },
+    "0": { x: 13, y: 3 },
   },
 
   [KeyboardLayout.AZERTY]: {
@@ -137,6 +173,18 @@ export const keyboardLayouts: Record<KeyboardLayout, Record<string, Key>> = {
     V: { x: 4.25, y: 2 },
     B: { x: 5.25, y: 2 },
     N: { x: 6.25, y: 2 },
+
+    // Number pad
+    "7": { x: 11.5, y: 0 },
+    "8": { x: 12.5, y: 0 },
+    "9": { x: 13.5, y: 0 },
+    "4": { x: 11.5, y: 1 },
+    "5": { x: 12.5, y: 1 },
+    "6": { x: 13.5, y: 1 },
+    "1": { x: 11.5, y: 2 },
+    "2": { x: 12.5, y: 2 },
+    "3": { x: 13.5, y: 2 },
+    "0": { x: 12.5, y: 3 },
   },
   [KeyboardLayout.ABCDEF]: {
     A: { x: 0.5, y: 0 },
@@ -165,5 +213,17 @@ export const keyboardLayouts: Record<KeyboardLayout, Record<string, Key>> = {
     X: { x: 5.25, y: 2 },
     Y: { x: 6.25, y: 2 },
     Z: { x: 7.25, y: 2 },
+
+    // Number pad
+    "7": { x: 11.5, y: 0 },
+    "8": { x: 12.5, y: 0 },
+    "9": { x: 13.5, y: 0 },
+    "4": { x: 11.5, y: 1 },
+    "5": { x: 12.5, y: 1 },
+    "6": { x: 13.5, y: 1 },
+    "1": { x: 11.5, y: 2 },
+    "2": { x: 12.5, y: 2 },
+    "3": { x: 13.5, y: 2 },
+    "0": { x: 12.5, y: 3 },
   },
 } as const;

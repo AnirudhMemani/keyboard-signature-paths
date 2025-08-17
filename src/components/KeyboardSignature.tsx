@@ -14,7 +14,7 @@ export const KeyboardSignature = () => {
       const isInputFocused = document.activeElement === inputRef.current;
 
       if (!isInputFocused) {
-        if (/^[a-zA-Z]$/.test(e.key) || e.key === "Backspace") {
+        if (/^[a-zA-Z0-9]$/.test(e.key) || e.key === "Backspace") {
           inputRef.current?.focus();
         }
       }
@@ -78,7 +78,7 @@ export const KeyboardSignature = () => {
   const exportSVG = () => {
     if (!signaturePath || !name) return;
 
-    const svgContent = `<svg width="650" height="200" xmlns="http://www.w3.org/2000/svg">
+    const svgContent = `<svg width="900" height="260" xmlns="http://www.w3.org/2000/svg">
           <path d="${signaturePath}" stroke="black" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>`;
 
@@ -95,8 +95,8 @@ export const KeyboardSignature = () => {
     if (!signaturePath || !name) return;
 
     const canvas = document.createElement("canvas");
-    canvas.width = 1300;
-    canvas.height = 400;
+    canvas.width = 1800;
+    canvas.height = 520;
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
@@ -105,7 +105,7 @@ export const KeyboardSignature = () => {
 
     // Background
     ctx.fillStyle = "black";
-    ctx.fillRect(0, 0, 650, 200);
+    ctx.fillRect(0, 0, 900, 260);
 
     // Signature path
     ctx.strokeStyle = "white";
@@ -173,7 +173,7 @@ export const KeyboardSignature = () => {
               ? "opacity-100 brightness-125 duration-50"
               : "opacity-0 duration-4000"
           }`}
-          style={{ width: "650px", height: "200px" }}
+          style={{ width: "900px", height: "260px" }}
         >
           {Object.entries(keyboardLayouts[currentKeyboardLayout]).map(
             ([char, pos]) => {
@@ -207,8 +207,8 @@ export const KeyboardSignature = () => {
         {/* Signature */}
         <svg
           className="pointer-events-none absolute top-0 left-0"
-          width="650"
-          height="200"
+          width="900"
+          height="260"
           style={{ zIndex: 10 }}
         >
           <title>

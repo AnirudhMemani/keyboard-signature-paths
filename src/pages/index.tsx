@@ -1,6 +1,6 @@
+import { KeyboardSignature } from "@/components/KeyboardSignature";
 import { Geist_Mono, Open_Sans } from "next/font/google";
 import Head from "next/head";
-import { KeyboardSignature } from "@/components/KeyboardSignature";
 
 const sans = Open_Sans({
   variable: "--font-open-sans",
@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Digitized Signatures</title>
+        <title>Digitized Signature Paths</title>
       </Head>
       <div
         className={`w-screen h-screen flex flex-col sm:items-center sm:justify-center ${sans.variable} ${mono.variable} font-sans py-10 overflow-x-auto overflow-y-auto`}
